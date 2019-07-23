@@ -1,0 +1,7 @@
+AbelIngeniero.1
+root
+
+Windows Service Name: MySQL57
+
+
+apache puerto 1527

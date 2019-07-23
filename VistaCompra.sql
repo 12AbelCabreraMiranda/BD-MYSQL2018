@@ -1,0 +1,1 @@
+create view chequerabanco.cuentaclientes as

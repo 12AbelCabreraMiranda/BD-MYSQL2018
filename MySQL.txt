@@ -1,0 +1,65 @@
+    Base de Datos mySQL Workbeanch
+
+//crear base de datos:
+create database practicando;
+
+// Crear tabla y campos para la base de datos
+use practicando;
+
+create table estudiante(
+
+idEstudiante int not null auto_increment,
+
+Nombre varchar(45),
+
+Apellido varchar(45),
+
+Grado varchar(30),
+
+Seccion varchar(10),
+
+Clave int,
+
+
+primary key (idEstudiante)
+
+
+);
+
+//Insertar datos a la tabla de la Base de Dato
+use practicando;
+insert into estudiante(Nombre, Apellido, Grado, Seccion, Clave)
+values ('Abel','Cabrera Miranda','6to Semestre','A','1');
+
+//Consultar los datos en la Base de Datos
+select * from estudiante;
+
+//Modificar datos en la Base de Datos
+use practicando;
+
+
+update estudiante set Grado='7mo. Semestre' where idEstudiante=1;
+
+//Eliminar Datos en la Base de Datos
+use practicando;
+
+
+delete from estudiante  where idEstudiante=1;
+
+
+Excel a BD
+load data infile "Documents/MySQL/ExcelBD/ConexionBD.csv" into table empleado
+
+fields terminated by ','
+
+lines terminated by '\n';
+
+
+
+
+
+
+
+
+
+
